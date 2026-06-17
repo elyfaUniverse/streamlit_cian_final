@@ -1,0 +1,172 @@
+{
+  "source": "models.ipynb, stage 4 final leaderboard",
+  "updated_at": "2026-06-17",
+  "selection_metric": "cv_rmse_log",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "participant": "Шмелев Роман",
+      "model": "XGBRegressor",
+      "cv_rmse_log": 0.1720,
+      "test_rmse_log": 0.1636,
+      "test_mae_log": 0.1102,
+      "test_r2_log": 0.9582,
+      "test_mape_price": 0.1121,
+      "notes": "XGBoostRegressor.ipynb"
+    },
+    {
+      "rank": 2,
+      "participant": "Голофаев Андрей",
+      "model": "LGBMRegressor",
+      "cv_rmse_log": 0.1722,
+      "test_rmse_log": 0.1673,
+      "test_mae_log": 0.1119,
+      "test_r2_log": 0.9563,
+      "test_mape_price": 0.1132,
+      "notes": "ml_project_golofaev.ipynb"
+    },
+    {
+      "rank": 3,
+      "participant": "Дудий Эльвира",
+      "model": "CatBoostRegressor",
+      "cv_rmse_log": 0.1727,
+      "test_rmse_log": 0.1679,
+      "test_mae_log": 0.1136,
+      "test_r2_log": 0.9559,
+      "test_mape_price": 0.1156,
+      "notes": "Optuna; CatBoost_model.ipynb"
+    },
+    {
+      "rank": 4,
+      "participant": "Казимирзоева Камила",
+      "model": "RandomForestRegressor",
+      "cv_rmse_log": 0.1903,
+      "test_rmse_log": 0.1795,
+      "test_mae_log": 0.1235,
+      "test_r2_log": 0.9497,
+      "test_mape_price": 0.1249,
+      "notes": "random_forest_kamila.ipynb"
+    }
+  ],
+  "baseline": [
+    {
+      "model": "MedianBaseline",
+      "test_mae_log": 0.6235,
+      "test_rmse_log": 0.8103,
+      "test_r2_log": -0.0257,
+      "test_mape_price": 0.5893
+    },
+    {
+      "model": "LinearRegression",
+      "cv_rmse_log": 0.2283,
+      "test_mae_log": 0.1648,
+      "test_rmse_log": 0.2231,
+      "test_r2_log": 0.9222,
+      "test_mape_price": 0.1662
+    }
+  ],
+  "top_segments": [
+    {
+      "segment": "Вторичка, СПб, первый этаж",
+      "mae_log": 0.1353,
+      "objects": 351
+    },
+    {
+      "segment": "Вторичка, СПб, не первый этаж",
+      "mae_log": 0.1302,
+      "objects": 2929
+    },
+    {
+      "segment": "Вторичка, ЛО, первый этаж",
+      "mae_log": 0.1078,
+      "objects": 45
+    },
+    {
+      "segment": "Вторичка, ЛО, не первый этаж",
+      "mae_log": 0.0956,
+      "objects": 386
+    },
+    {
+      "segment": "Новостройка, СПб, не первый этаж",
+      "mae_log": 0.0661,
+      "objects": 915
+    },
+    {
+      "segment": "Новостройка, ЛО, не первый этаж",
+      "mae_log": 0.0639,
+      "objects": 264
+    },
+    {
+      "segment": "Новостройка, ЛО, первый этаж",
+      "mae_log": 0.0453,
+      "objects": 55
+    },
+    {
+      "segment": "Новостройка, СПб, первый этаж",
+      "mae_log": 0.0445,
+      "objects": 83
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "area_total",
+      "importance": 0.3179
+    },
+    {
+      "feature": "center_travel_km",
+      "importance": 0.2293
+    },
+    {
+      "feature": "log_area",
+      "importance": 0.1458
+    },
+    {
+      "feature": "build_year",
+      "importance": 0.1100
+    },
+    {
+      "feature": "district_Петроградский",
+      "importance": 0.1089
+    },
+    {
+      "feature": "nearest_metro_Волковская",
+      "importance": 0.0559
+    },
+    {
+      "feature": "nearest_metro_Невский проспект",
+      "importance": 0.0547
+    },
+    {
+      "feature": "nearest_metro_Адмиралтейская",
+      "importance": 0.0505
+    },
+    {
+      "feature": "region_Ленинградская область",
+      "importance": 0.0485
+    },
+    {
+      "feature": "nearest_metro_Крестовский остров",
+      "importance": 0.0477
+    },
+    {
+      "feature": "metro_travel_km",
+      "importance": 0.0442
+    },
+    {
+      "feature": "district_Московский",
+      "importance": 0.0425
+    },
+    {
+      "feature": "nearest_metro_Маяковская",
+      "importance": 0.0389
+    },
+    {
+      "feature": "lat",
+      "importance": 0.0389
+    },
+    {
+      "feature": "area_kitchen",
+      "importance": 0.0376
+    }
+  ]
+}

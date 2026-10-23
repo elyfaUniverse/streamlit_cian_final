@@ -35,7 +35,7 @@ cd real-estate-price-prediction-cian-streamlit-deploy
 run_local.bat
 ```
 
-На Windows скрипт использует общую среду `%USERPROFILE%\.venvs\study-py312`, когда она установлена. На этом ПК в ней работает Python 3.12.15. Скрипт проверяет комплектность папки и запускает Streamlit.
+На Windows скрипт использует общую среду `%USERPROFILE%\anaconda3`, когда она установлена. На этом ПК в ней работает Python 3.14.8. Скрипт проверяет комплектность папки и запускает Streamlit.
 
 На другом ПК Windows при отсутствии общей среды скрипт создаёт проектную `.venv`, устанавливает зависимости из `requirements.txt`, проверяет комплектность папки и запускает Streamlit. На macOS/Linux скрипт `run_local.sh` использует проектную `.venv`.
 
@@ -48,7 +48,7 @@ run-python.bat --version
 
 Команда выбирает общую среду или существующую проектную `.venv`. Первоначальную настройку проектной среды выполняет `run_local.bat`.
 
-В `.vscode/settings.json` указан путь общей среды. При сохранённом прежнем выборе интерпретатора выберите `%USERPROFILE%\.venvs\study-py312\Scripts\python.exe` через `Python: Select Interpreter`. На другом ПК выберите `.venv\Scripts\python.exe` после установки зависимостей.
+В `.vscode/settings.json` указан путь общей среды. При сохранённом прежнем выборе интерпретатора выберите `%USERPROFILE%\anaconda3\python.exe` через `Python: Select Interpreter`. На другом ПК выберите `.venv\Scripts\python.exe` после установки зависимостей.
 
 Состав общей среды на этом ПК сохранён в `%USERPROFILE%\.venvs\study-requirements.txt`. Зависимости переносимого приложения зафиксированы в `requirements.txt`.
 

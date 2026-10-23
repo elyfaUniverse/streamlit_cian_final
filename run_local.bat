@@ -1,7 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-set "STUDY_PYTHON=%USERPROFILE%\.venvs\study-py312\Scripts\python.exe"
+set "STUDY_PYTHON=%USERPROFILE%\anaconda3\python.exe"
 
 if exist "%STUDY_PYTHON%" goto run
 set "STUDY_PYTHON=%~dp0.venv\Scripts\python.exe"
